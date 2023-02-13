@@ -17,8 +17,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-section {
-      background-image: var(--hero-bg),
-        url("../images/hero/hero-bg@2x.jpg");
+      background-image: var(--hero-bg), url("../images/hero/hero-bg@2x.jpg");
     }
   }
 
@@ -26,8 +25,4 @@
     font-size: 56px;
     min-width: 494px;
   }
-
-
-
-
 }

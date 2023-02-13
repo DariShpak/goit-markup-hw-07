@@ -1,6 +1,5 @@
 @media screen and (min-width: 480px) {
-
-    .hero-section {
+  .hero-section {
     max-width: 767px;
     height: 436px;
 
@@ -19,4 +18,3 @@
     }
   }
 }
-
