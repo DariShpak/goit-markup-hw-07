@@ -32,7 +32,9 @@ body {
 }
 
 .container {
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 428px;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -40,20 +42,6 @@ body {
 .section {
   padding-top: 96px;
   padding-bottom: 96px;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
 
 .visually-hidden {
@@ -158,6 +146,16 @@ img {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 767px) {
+  .nav-list {
+    display: none;
+  }
+
+  .address {
+    display: none;
+  }
+}
+
 /* header logotype */
 
 .logo {
@@ -192,16 +190,6 @@ img {
   stroke-width: 0;
   stroke: var(--heading-text-color);
   fill: var(--heading-text-color);
-}
-
-@media screen and (max-width: 767px) {
-  .nav-list {
-    display: none;
-  }
-
-  .address {
-    display: none;
-  }
 }
 
 /* ---------------MOBILE-MENU---------------- */
@@ -574,6 +562,7 @@ img {
   width: 100%;
   text-align: center;
 }
+
 .email-input .section-subtitle {
   color: var(--hero-section-color);
   font-size: 16px;
@@ -651,9 +640,10 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  padding: 24px;
-  max-width: 392px;
-  /* min-height: 586px; */
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
 
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -668,11 +658,13 @@ img {
 }
 
 .modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
-  margin-bottom: 24px;
 
   width: 24px;
   height: 24px;
@@ -692,11 +684,29 @@ img {
 }
 
 .modal-title {
+  margin-top: 16px;
   margin-bottom: 16px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: calc(24 / 16);
   text-align: center;
   color: var(--heading-text-color);
+}
+
+@media screen and (min-width: 428px) {
+  .modal {
+    padding-top: 72px;
+    min-width: 392px;
+  }
+
+  .modal-close {
+    top: 24px;
+    right: 24px;
+  }
+
+  .modal-title {
+    margin-top: 0;
+  }
 }
 
 .modal-input {
