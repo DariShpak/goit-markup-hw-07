@@ -1,1 +1,33 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 
+  .hero-section {
+    max-width: 1440px;
+    height: 436px;
+
+    background-image: var(--hero-bg), url(../images/hero/hero-bcg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: var(--hero-bg),
+        url("../images/hero/hero-bg@2x.jpg");
+    }
+  }
+
+  .hero-title {
+    font-size: 56px;
+    min-width: 494px;
+  }
+
+
+
+
+}
