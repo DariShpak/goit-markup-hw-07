@@ -1,7 +1,22 @@
 @media screen and (min-width: 480px) {
-  .container {
-    max-width: 428px;
-    margin-left: auto;
-    margin-right: auto;
+
+    .hero-section {
+    max-width: 767px;
+    height: 436px;
+
+    background-image: var(--hero-bg), url(../images/hero/hero-bg-tablet.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: var(--hero-bg),
+        url("../images/hero/hero-bg-tablet@x2.jpg");
+    }
   }
 }
+
