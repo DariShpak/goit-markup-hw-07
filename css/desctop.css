@@ -1,9 +1,8 @@
-/* 
-  .hero-section {
-    padding-top: 188px;
-    padding-bottom: 188px;
 
-    max-width: 1440px;
-    height: 600px;
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
-} */
+}
