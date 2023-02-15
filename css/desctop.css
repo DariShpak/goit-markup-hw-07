@@ -1,7 +1,183 @@
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 1158px;
+
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  /* -----------------SITE-HEADER------------------- */
+
+  .header-container {
+    align-items: center;
+  }
+
+  .logo-header {
+    margin-right: 70px;
+  }
+  /* -------------- ADDRESS SECTION ----------------- */
+
+  .address-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .address-link .link {
+    display: block;
+    margin-top: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  /* -----------------HERO SECTION-------------------- */
+
+  .hero-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 1440px;
+    height: 600px;
+  }
+
+  .hero-title {
+    max-width: 494px;
+    margin-bottom: 48px;
+  }
+  /* -----------------FEAUTERS SECTION---------------- */
+
+  .feauters {
+    display: flex;
+    gap: 24px;
+  }
+
+  .feauters-section {
+    padding-bottom: 0;
+  }
+
+  .feauters-item {
+    border-radius: 4px;
+    flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .feauters .section-title {
+    margin-bottom: 8px;
+
+    color: var(--heading-text-color);
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .feauters-img {
+    height: 112px;
+    border-radius: 4px;
+    background-color: var(--light-mode-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 8px;
+  }
+
+  /* ----------------- OUR SERVICES------------------ */
+
+  .services-section {
+    padding-top: 120px;
+  }
+
+  .services-container .section-title {
+    max-width: 323px;
+    margin-bottom: 72px;
+  }
+
+  .services-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .services-list-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+
+  /* -----------------TEAM SECTION-------------------- */
+
+  .team-section {
+    padding-bottom: 120px;
+  }
+
+  .team-list {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .team-card {
+    max-width: 264px;
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  /* ----------------CUSTOMERS SECTION------------------- */
+
+  .customers-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+  }
+
+  .customers-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .customers-item {
+    flex-basis: calc((100% - 120px) / 6);
+    height: 88px;
+  }
+  /* ---------------FOOTER SECTION-------------------- */
+
+  .footer-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-container {
+    max-width: 1158px;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-content-wrapper {
+    max-width: 264px;
+    margin-right: 120px;
+  }
+
+  .email-input {
+    margin-left: auto;
+  }
+
+  .email-input .section-subtitle {
+    color: var(--hero-section-color);
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .footer-socials .socials-list {
+    margin-bottom: 0;
+  }
+
+  .footer-text {
+    margin-bottom: 0;
   }
 }
