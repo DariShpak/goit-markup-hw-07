@@ -22,4 +22,8 @@
         url("../images/hero/hero-bg-tablet@x2.jpg");
     }
   }
+
+  .modal-close {
+    margin-bottom: 24px;
+  }
 }
